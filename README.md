@@ -12,3 +12,6 @@ If you spot some errors in the translation, create an issue or even better send 
 - python3 
 - pandas
 - uglyfy.js
+
+To build run build.sh  
+Language change rules are in conv.example
