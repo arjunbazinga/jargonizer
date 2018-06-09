@@ -23,48 +23,62 @@
         <style>
             body {
                 margin: auto;
-                background: white;
+                background: #fffde8;
                 padding: 10px;
-                text-align: center
+                text-align: center;
+                align-items:center;
             }
 
             textarea{
                 margin: auto;
                 min-width: 95%;
                 max-width: 100%;
-	            height: 120px;
-                margin-bottom: 5%;
+                min-height: 40%;
+                margin-bottom:  5%;	            
+                border-radius: 6px;
+                box-shadow: 2px 2px 8px rgba(black, .3);
+                border: 0
             }
             textarea #output_area {
                 margin-bottom: 10%
-            }   
+            }
+                
+    
         </style>
         <h2>Jargonizer</h2>
         <p>
-            Everyone wants the text to be simple, but not you.
-            Now you too can sound like the Godawful emails you get.
+           A little something to help you with all the Godawful emails.
         </p>
-        <textarea name="input" id="input" class="textarea">Type some text here !</textarea>
+        <textarea name="input" id="input" >To: Perhaps the future user of this website
+
+I don't mind when I get emails like the one below, but please don't send them to me. I think almost everyone wants their email to be simple, but not you, so now if you do use this website, we can all live in peace!
+
+-Arjun
+
+This website also helps you write a similar email to the one below if you wish to!
+        </textarea>
         <br>
         <button type="button" onclick="back_submit()">Jargonize!</button>
         <button type="button" onclick="to_submit()">Simplify!</button>
-        <br><br>
-
-        <b><p id ="status"></p></b>
-        <textarea id="output_area" readonly>this is the output</textarea>
         <br>
 
-
-
-
+        <b><p id ="status"></p></b>
+        <textarea id="output_area"  readonly>
+            If you see this text, please makesure javascript is turned on
+        </textarea>
+        <br>
         <script type="text/javascript" src="regex_rules.min.js" ></script>
         <script type="text/javascript" src="main.min.js" ></script>
+        <script>
+            back_submit()
+        </script>
 
     
         <link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
             
             Inspired by <a href=https://en.wikipedia.org/wiki/List_of_plain_English_words_and_phrases>Wikipedia's List</a> of plain words and phrases. <br>
             Made with <i class="icon ion-heart"></i>, for giggles.
+
     </body>
 
 </html>
