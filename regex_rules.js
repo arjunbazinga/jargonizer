@@ -1,8 +1,8 @@
 function get_formatting_rules(direction){
 if (direction == "to")
 {return[
-[/\babundance\b/gi, "enough"],
-[/\babundance\b/gi, "plenty"],
+[/\ban abundance\b/gi, "enough"],
+[/\ban abundance\b/gi, "plenty"],
 [/\baccede\b/gi, "allow"],
 [/\baccede to\b/gi, "agree to"],
 [/\baccelerate\b/gi, "speed up"],
@@ -351,8 +351,8 @@ if (direction == "to")
 [/\byour attention is drawn\b/gi, "please note"],
 [/\byour office \b/gi, "you"],
 ]}else { return [
-[/\benough\b/gi, "abundance"],
-[/\bplenty\b/gi, "abundance"],
+[/\benough\b/gi, "an abundance"],
+[/\bplenty\b/gi, "an abundance"],
 [/\ballow\b/gi, "accede"],
 [/\bagree to\b/gi, "accede to"],
 [/\bspeed up\b/gi, "accelerate"],
