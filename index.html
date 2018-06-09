@@ -1,28 +1,58 @@
 <html>
     <head>
-    <script type="text/javascript" src="main.min.js" ></script>
+        <meta name=viewport content='width=700'>
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="theme-color" content="#000000">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="apple-mobile-web-app-capable" content="yes">
 
     </head>
     <Title>Jargonizer</Title>
     <body>
+        <style>
+            body {
+                margin: auto;
+                background: white;
+                padding: 10px;
+                text-align: center
+            }
+
+            textarea{
+                margin: auto;
+                min-width: 95%;
+                max-width: 100%;
+	            height: 120px;
+                margin-bottom: 5%;
+            }
+            textarea #output_area {
+                margin-bottom: 10%
+            }   
+        </style>
         <h2>Jargonizer</h2>
         <p>
             Everyone wants the text to be simple, but not you.
         </p>
-        Input Text:<br>
-        <textarea name="input" rows="10" cols="50" id="input">Type some text here !</textarea>
+        <textarea name="input" id="input" class="textarea">Type some text here !</textarea>
         <br>
-        <button type="button" onclick="to_submit()">Simplify!</button>
         <button type="button" onclick="back_submit()">Jargonize!</button>
+        <button type="button" onclick="to_submit()">Simplify!</button>
+        <br><br>
+
+        <b><p id ="status"></p></b>
+        <textarea id="output_area" readonly>this is the output</textarea>
         <br>
-        <br>
-        Output Text:<br>
-        <div id ="status"> 
-            Status
-        </div>
-        <textarea rows="10" cols="50" id="output_area" readonly>this is the output</textarea>
 
 
-    </body>
+
+
+        <script type="text/javascript" src="regex_rules.min.js" ></script>
+        <script type="text/javascript" src="main.min.js" ></script>
+
+    
+        <link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+            Made with <i class="icon ion-heart"></i>, for giggles.
+        </body>
 
 </html>
