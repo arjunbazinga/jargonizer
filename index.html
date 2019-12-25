@@ -28,6 +28,12 @@
                 text-align: center;
                 align-items:center;
             }
+            ::-moz-selection {
+                background: yellow;
+            }
+            ::selection {
+                background: yellow;
+            }    
             textarea{
                 margin: auto;
                 min-width: 95%;
@@ -41,12 +47,22 @@
             textarea #output_area {
                 margin-bottom: 10%
             }
-            ::-moz-selection {
-                background: yellow;
+
+            @media (prefers-color-scheme: light) {
+                body {
+                background-color: #fffde8;
+                color: black;
+                }
             }
-            ::selection {
-                background: yellow;
-            }    
+
+            @media (prefers-color-scheme: dark) {
+                body {
+                  background-color: black;
+                  color: #fffde8;
+                }
+            }
+    </style>
+            
     
         </style>
         <h2>Jargonizer</h2>
